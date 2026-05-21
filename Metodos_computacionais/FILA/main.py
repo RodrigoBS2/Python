@@ -1,11 +1,10 @@
-''' Para fila simples 
+# Para fila simples 
 
 from Fila import Queue
 Q = Queue()
 
 Q.show()
 Q.dequeue()
-print("\n\n")
 
 Q.enqueue(1)
 Q.enqueue(2)
@@ -13,17 +12,18 @@ Q.enqueue(3)
 Q.enqueue(4)
 
 Q.show()
-print(Q.front())
-print('\n\n')
+print(f"O primeiro elemento da fila é {Q.front()}")
 
 Q.dequeue()
 Q.dequeue()
 
 Q.show()
 
-'''
+ 
 
-''' Para fila dupla '''
+
+# Para fila dupla 
+'''
 from FilaDupla import DQueue
 D = DQueue()
 D.show()
@@ -55,7 +55,7 @@ print('\n')
 print(D.front())
 print(D.back())
 
-
+'''
 
 
 '''

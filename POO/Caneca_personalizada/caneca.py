@@ -3,8 +3,7 @@ class Caneca:
       self.logo = logo
       self.nome = nome
       self.cor = cor
-      self.status = 'Cheio'
-      
+      self.status = 'Vazio'      
     
     def beber(self):
       self.status= 'Vazio'
@@ -24,18 +23,18 @@ class Caneca:
       self.mostrarDados()
 
     def mostrarDados(self):
-      print(f'Caneca: \n  Logo: {self.logo}\n  Nome: {self.nome}\n  Cor: {self.cor}\n')
+      print(f'Caneca: \n  Logo: {self.logo}\n  Nome: {self.nome}\n  Cor: {self.cor}')
     
 class Caneca_Homem_de_ferro(Caneca):
   def __init__(self):
     super().__init__('Marvel','Homem de ferro', 'Amarela e vermelho')         # Usando "super().Nome_da_função(parametros_dessa_função)" vc não precisa digitar novamente os codigos da função ja escrita
   def extra(self):
     self.mostrarDados()
-    print("Soy el hombre de hierro!")
+    print("  Soy el hombre de hierro!\n\n")
 
 class Caneca_Batman(Caneca):
   def __init__(self):
     super().__init__('DC','Batman', 'Preto')
   def extra(self):
     self.mostrarDados()
-    print('Soy Batman!')
+    print('  Soy Batman!\n\n')
