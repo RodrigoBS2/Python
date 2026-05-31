@@ -1,0 +1,45 @@
+deque objects:
+
+    class collections.deque([iterable[, maxlen]])
+
+        Returns a new deque object initialized left-to-right (using append()) with data from iterable. 
+        If iterable is not specified, the new deque is empty.
+
+A deque stands for Double-Ended Queue. 
+
+It is a special type of data structure that allows to add and remove 
+elements from both ends efficiently. This makes it useful in applications 
+like task scheduling, sliding window problems and real-time data processing.
+
+Example:
+    from collections import deque 
+    de = deque(['name','age','DOB']) 
+    print(de)
+
+Output:
+    deque(['name', 'age', 'DOB'])
+
+Types of Restricted Deque:
+    Input Restricted Deque:  Input is limited at one end while deletion is permitted at both ends.
+    Output Restricted Deque: output is limited at one end but insertion is permitted at both ends.
+
+Appending and Deleting Deque Items:
+    append(x): Adds x to the right end of the deque.
+    appendleft(x): Adds x to the left end of the deque.
+    extend(iterable): Adds all elements from the iterable to the right end.
+    extendleft(iterable): Adds all elements to the left end, but elements are inserted one by one from the iterable, resulting in a reversed order.
+    remove(value): Removes the first occurrence of the specified value from the deque. If value is not found, it raises a ValueError.
+    pop(): Removes and returns an element from the right end.
+    popleft(): Removes and returns an element from the left end.
+    clear(): Removes all elements from the deque.
+
+Accessing Item and length of deque
+    Indexing: Access elements by position using positive or negative indices.
+    len(): Returns the number of elements in the deque.
+
+Count, Rotation and Reversal of a deque
+
+    count(value): This method counts the number of occurrences of a specific element in the deque.
+    rotate(n): This method rotates the deque by n steps. Positive n rotates to the right and negative n rotates to the left.
+    reverse(): This method reverses the order of elements in the deque.
+

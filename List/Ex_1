@@ -1,0 +1,63 @@
+# 1 Creating a list
+# 1.1 Using Square Brackets: Square brackets [] are used to create a list directly.
+
+a = [1, 2, 3]
+print(f"Lista a = {a}")
+
+b = ["apple", "banana"]
+print(f"Lista b = {b}")
+
+# 1.2 Using list() Constructor: A list can also be created by passing an iterable (such as 
+#    tuple, string or another list) to the list() constructor.
+
+c = list((1, 2, 3, 'apple', 4.5))  
+print(f"Lista c = {c}")
+
+d = list("GFG")
+print(f"Lista d = {d}")
+
+# 1.3 Creating List with Repeated Elements: A list with repeated elements can be created 
+#     using the multiplication (*) operator.
+
+e = [2] * 5
+f = [0] * 7
+
+print(f"Lista e = {e}")
+print(f"Lista f = {f}")
+
+# 2 Accessing List Elements
+
+g = [10, 20, 30]
+print(f"Lista g = {g}")
+print(f"g[0] = {g[0]}")
+print(f"g[-1] = {g[-1]}")
+
+# 3 Adding element into list
+
+g.append(40)
+g.insert(1,11)          # Adds an element at a specific position. Order: position, value
+g.extend([50,60,70])    # Adds multiple elements to the end of the list.
+print (f"Lista g atulaizada. g = {g}")
+
+# 4 Updating elements into List
+
+h = list((1,2,3,4,5,6))
+h[1] = 222
+print (f"Lista h = {h}")
+print (f"Lista h atulaizada. h = {h}")
+
+# 5 Remove elements into List
+
+i = list((1,2,4,11,555,2,6,3322,11))
+print(f"Lista i = {i}")
+i.remove(2)        # Removes the first occurrence of an element
+i.pop()            # Removes the element at a specific index or the last element if no index is specified
+i.pop(0)
+print(f"Primeira atualização da lista i: i = {i}")
+del i[2]
+print(f"Segunda atualização atualização da lista i: i = {i}")
+i.clear()          # Remove all itens  
+print(f"Limpando a lista i: i = {i}")
+
+
+

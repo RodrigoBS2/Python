@@ -1,0 +1,19 @@
+A ligação entre o Raspberry Pi 3 e o ADS1115 é feita através do protocolo I2C. 
+Como o Raspberry Pi utiliza lógica de 3.3V, o ideal é alimentar o ADS1115 também 
+com 3.3V para evitar danos aos pinos de dados (SDA/SCL) do seu Pi.
+
+Aqui está o esquema de pinagem detalhado:
+
+Tabela de Conexões
+
+ADS1115 (Pino)	Raspberry Pi 3 (Pino Físico)	    Função
+VDD	            Pino 1 (3.3V)	                    Alimentação
+GND	            Pino 6 (GND)	Terra
+SCL	            Pino 5 (GPIO 3 / SCL)	            Clock do I2C
+SDA	            Pino 3 (GPIO 2 / SDA)	            Dados do I2C
+ADDR	        Conecte ao GND do ADS1115	        Define o endereço I2C como 0x48
+ALRT	        Não conectado (opcional)	        Alerta de comparação
+A0 - A3	        Suas fontes de sinal analógico	    Entradas de tensão (0 a 3.3V)
+
+
+Pinagem da raspberry: https://www.pi4j.com/1.2/pins/model-3b-rev1.html
