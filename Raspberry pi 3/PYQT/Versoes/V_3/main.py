@@ -21,7 +21,7 @@ except Exception as e:
     print(f"Erro ao abrir a porta serial {PORTA_SERIAL}: {e}")
     exit()
 
-frequencia_amostragem = 5700            # 5700, 808
+frequencia_amostragem = 5700             # 5291, 5700, 808
 TEMPO_MAXIMO = 1.0 
 tamanho_buffer = int(TEMPO_MAXIMO * frequencia_amostragem) * 2
 
@@ -280,7 +280,7 @@ class OsciloscopioApp(QtWidgets.QWidget):
         x_salvar = np.linspace(0, self.tempo_visivel, len(y_salvar))
         
         # Caminho absoluto solicitado para salvar os arquivos
-        diretorio_destino = "/home/rodrigo/Área de Trabalho/studies/Python/Raspberry pi 3/PYQT/Versoes/V_3/DAQ/"
+        diretorio_destino = "/home/rodrigo/Área de Trabalho/studies/python/Raspberry pi 3/PYQT/Versoes/V_3/DAQ/"
         
         # Cria os diretórios caso eles ainda não existam no sistema
         try:

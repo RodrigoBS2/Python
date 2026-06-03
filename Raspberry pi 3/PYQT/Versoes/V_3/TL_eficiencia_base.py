@@ -171,7 +171,7 @@ def calcular_quantico(theta, P_abs, kappa, lambda_ex, dndT, lambda_em):
 
 def main():
 
-    diretorio = "/home/rodrigo/Área de Trabalho/studies/Python/Raspberry pi 3/PYQT/Versoes/V_3/DAQ/"
+    diretorio = "/home/rodrigo/Área de Trabalho/studies/python/Raspberry pi 3/PYQT/Versoes/V_3/DAQ/"
 
     tempo_bruto, sinal_bruto, nome = carregar_dados_reais(diretorio)
     tempo, sinal = isolar_pulso(tempo_bruto, sinal_bruto)
@@ -179,8 +179,8 @@ def main():
     # =========================================================
     # PARÂMETROS GEOMÉTRICOS 
     # =========================================================
-    z_op = 1.02e-3
-    z = -1.0e-3 
+    z_op = 1.9e-3
+    z = -1.0e-2 
     m = 1.0
 
     num, den_a, den_b = calcular_parametros_geometricos(z, z_op, m)
@@ -191,7 +191,7 @@ def main():
     L = 1e-3
     dndT = -3.94e-4
     kappa = 0.171
-    P_in = 15.6e-3       # Potência bruta incidente medida pelo Power Meter
+    P_in = 17e-3       # Potência bruta incidente medida pelo Power Meter
     A = 0.3567
     lambda_ex = 532e-9
     lambda_em = 560e-9
